@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LowPrice • Select Payment</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="theme-pink">
+  <header class="pay-header">
+    <a class="back-btn" href="cart.html">←</a>
+    <div class="title">Select Payment Method</div>
+  </header>
+  <main class="pay-select-container">
+    <section class="addr-card">
+      <div class="row">
+        <span class="pin">📍</span>
+        <div class="addr-text" id="psAddress">House No. 45, Ram Nagar, Uttar Pradesh, India.</div>
+        <a class="link" href="#">›</a>
+      </div>
+    </section>
+    <section class="item-mini" id="psItem">
+      <div class="thumb"></div>
+      <div class="info">
+        <div class="name">Modern light clothes</div>
+        <div class="meta">Dress modern</div>
+        <div class="qty-control">
+          <button class="qty-btn minus">-</button>
+          <span class="qty-val">1</span>
+          <button class="qty-btn plus">+</button>
+        </div>
+      </div>
+      <div class="price" id="psPrice">RM0.00</div>
+    </section>
+    <section class="payment-methods">
+      <div class="label">Payment</div>
+      <div class="methods">
+        <button class="method-card" data-method="cod">
+          <span class="method-title">COD</span>
+          <span class="method-sub">Cash On Delivery</span>
+        </button>
+      </div>
+    </section>
+    <button class="primary-btn w-full" id="psContinueBtn">Continue</button>
+  </main>
+  <nav class="tabbar">
+    <a class="tab-item" href="index.html">
+      <span>🏠</span>
+      <span>Home</span>
+    </a>
+    <a class="tab-item active" href="cart.html">
+      <span>🛒</span>
+      <span>Cart</span>
+      <span class="badge-pill" id="cartBadge">0</span>
+    </a>
+    <a class="tab-item" href="account.html">
+      <span>👤</span>
+      <span>Account</span>
+    </a>
+  </nav>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

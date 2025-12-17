@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LowPrice • Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+  <body class="theme-pink">
+  <header class="topbar">
+    <div class="search-row">
+      <input id="searchInput" type="text" placeholder="Bluetooth TWS">
+      <button class="icon-btn" aria-label="camera">📷</button>
+      <button class="primary-btn" id="searchBtn">Search</button>
+    </div>
+    <div class="category-row">
+      <a href="#" class="chip">Fashion</a>
+      <a href="#" class="chip">LadBeauty</a>
+      <a href="#" class="chip">Grocery</a>
+    </div>
+  </header>
+  <section class="banner-grid">
+    <div class="banner badge-left">
+      <div class="badge">12.12</div>
+      <div class="banner-title">Beauty</div>
+    </div>
+    <div class="banner">
+      <div class="badge">12.12</div>
+      <div class="banner-title">12.12 All Out Sale</div>
+    </div>
+    <div class="banner badge-right">
+      <div class="badge">12.12</div>
+      <div class="banner-title">Fashion</div>
+    </div>
+  </section>
+  <section class="section-head">
+    <div class="tabs">
+      <button class="tab active">New User Exclusive!</button>
+      <button class="tab">12.12 Exclusive Deals</button>
+    </div>
+    <a class="see-all" href="#">See All</a>
+  </section>
+  <main class="product-grid">
+    <article class="product-card" data-id="p1" data-name="Satin Pink Dress" data-price="29.16">
+      <div class="product-media pink">
+        <span class="label">-17%</span>
+      </div>
+      <div class="product-info">
+        <h3 class="product-name">Satin Pink Dress</h3>
+        <div class="product-meta">
+          <span class="price">RM29.16</span>
+          <button class="add-btn" data-action="add">Add</button>
+        </div>
+      </div>
+    </article>
+    <article class="product-card" data-id="p2" data-name="Blue Hoodie" data-price="29.16">
+      <div class="product-media blue">
+        <span class="label">-25%</span>
+      </div>
+      <div class="product-info">
+        <h3 class="product-name">Blue Hoodie</h3>
+        <div class="product-meta">
+          <span class="price">RM29.16</span>
+          <button class="add-btn" data-action="add">Add</button>
+        </div>
+      </div>
+    </article>
+    <article class="product-card" data-id="p3" data-name="Pink Top" data-price="29.16">
+      <div class="product-media pink">
+        <span class="label">-17%</span>
+      </div>
+      <div class="product-info">
+        <h3 class="product-name">Pink Top</h3>
+        <div class="product-meta">
+          <span class="price">RM29.16</span>
+          <button class="add-btn" data-action="add">Add</button>
+        </div>
+      </div>
+    </article>
+    <article class="product-card" data-id="p4" data-name="Basic Tote" data-price="19.90">
+      <div class="product-media gray">
+        <span class="label">-10%</span>
+      </div>
+      <div class="product-info">
+        <h3 class="product-name">Basic Tote</h3>
+        <div class="product-meta">
+          <span class="price">RM19.90</span>
+          <button class="add-btn" data-action="add">Add</button>
+        </div>
+      </div>
+    </article>
+    <article class="product-card" data-id="p5" data-name="Shopping Bag" data-price="15.00">
+      <div class="product-media gray">
+        <span class="label">-5%</span>
+      </div>
+      <div class="product-info">
+        <h3 class="product-name">Shopping Bag</h3>
+        <div class="product-meta">
+          <span class="price">RM15.00</span>
+          <button class="add-btn" data-action="add">Add</button>
+        </div>
+      </div>
+    </article>
+  </main>
+  <nav class="tabbar">
+    <a class="tab-item active" href="index.html">
+      <span>🏠</span>
+      <span>Home</span>
+    </a>
+    <a class="tab-item" href="cart.html">
+      <span>🛒</span>
+      <span>Cart</span>
+      <span class="badge-pill" id="cartBadge">0</span>
+    </a>
+    <a class="tab-item" href="account.html">
+      <span>👤</span>
+      <span>Account</span>
+    </a>
+  </nav>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

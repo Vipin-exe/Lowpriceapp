@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LowPrice • Cart</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="theme-pink">
+  <header class="cart-header">
+    <a class="back-btn" href="index.html">←</a>
+    <div class="title">Cart</div>
+  </header>
+  <main class="cart-container">
+    <div id="cartList" class="cart-list"></div>
+    <div class="cart-summary">
+      <div class="row">
+        <span>Subtotal</span>
+        <span id="cartSubtotal">RM0.00</span>
+      </div>
+      <div class="row">
+        <span>Shipping</span>
+        <span id="cartShipping">RM0.00</span>
+      </div>
+      <div class="row total">
+        <span>Total</span>
+        <span id="cartTotal">RM0.00</span>
+      </div>
+      <button class="primary-btn w-full" id="checkoutBtn">Checkout</button>
+    </div>
+  </main>
+  <nav class="tabbar">
+    <a class="tab-item" href="index.html">
+      <span>🏠</span>
+      <span>Home</span>
+    </a>
+    <a class="tab-item active" href="cart.html">
+      <span>🛒</span>
+      <span>Cart</span>
+      <span class="badge-pill" id="cartBadge">0</span>
+    </a>
+    <a class="tab-item" href="account.html">
+      <span>👤</span>
+      <span>Account</span>
+    </a>
+  </nav>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
