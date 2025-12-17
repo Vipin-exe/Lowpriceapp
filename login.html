@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LowPrice • Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="theme-pink">
+  <header class="login-header">
+    <a class="close-btn" href="index.html">✕</a>
+    <div class="brand">LowPrice</div>
+  </header>
+  <main class="login-container">
+    <div class="subtext">49653 users just added to cart</div>
+    <div class="login-tabs">
+      <button class="tab active" data-login-tab="whatsapp">Whatsapp</button>
+      <button class="tab" data-login-tab="sms">SMS</button>
+    </div>
+    <div class="phone-input">
+      <button class="country-btn">🇬🇧 +60</button>
+      <input id="phoneNumber" type="tel" placeholder="Sign up with Mobile Number">
+    </div>
+    <button class="primary-btn w-full" id="sendCodeBtn">Send Code Via WhatsApp</button>
+    <div class="or-row"><span>Or</span></div>
+    <div class="social-row">
+      <button class="social-btn fb">f</button>
+      <button class="social-btn google">G</button>
+    </div>
+    <div class="links-row">
+      <a href="#">Login Now</a>
+      <span>•</span>
+      <a href="#">Trouble Sign in?</a>
+    </div>
+    <div class="policy-row">
+      <span>By registration, you agree to our</span>
+      <a href="#">Security and privacy</a>
+    </div>
+    <div class="finger-row">
+      <span>Enable Fingerprint Authentication</span>
+      <label class="switch">
+        <input type="checkbox" id="fingerSwitch">
+        <span class="slider"></span>
+      </label>
+    </div>
+  </main>
+  <nav class="tabbar">
+    <a class="tab-item" href="index.html">
+      <span>🏠</span>
+      <span>Home</span>
+    </a>
+    <a class="tab-item" href="cart.html">
+      <span>🛒</span>
+      <span>Cart</span>
+      <span class="badge-pill" id="cartBadge">0</span>
+    </a>
+    <a class="tab-item" href="account.html">
+      <span>👤</span>
+      <span>Account</span>
+    </a>
+  </nav>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LowPrice • Order</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="theme-pink">
+  <header class="order-header">
+    <a class="back-btn" href="cart.html">←</a>
+    <div class="title">Order Summary</div>
+  </header>
+  <main class="order-container">
+    <section class="address">
+      <div class="row">
+        <span>Deliver to</span>
+        <a href="#" class="link">Change</a>
+      </div>
+      <div class="addr-line" id="addressLine">Default Address</div>
+    </section>
+    <section class="order-items" id="orderItems"></section>
+    <section class="payment">
+      <div class="row">
+        <span>Payment</span>
+        <select id="paymentMethod">
+          <option value="cod">Cash on Delivery</option>
+          <option value="card">Card</option>
+          <option value="wallet">Wallet</option>
+        </select>
+      </div>
+    </section>
+    <section class="order-total">
+      <div class="row">
+        <span>Items Total</span>
+        <span id="itemsTotal">RM0.00</span>
+      </div>
+      <div class="row">
+        <span>Shipping</span>
+        <span id="shippingTotal">RM0.00</span>
+      </div>
+      <div class="row total">
+        <span>Payable</span>
+        <span id="payableTotal">RM0.00</span>
+      </div>
+      <button class="primary-btn w-full" id="confirmOrderBtn">Confirm Order</button>
+      <button class="secondary-btn w-full" id="backHomeBtn">Back to Home</button>
+    </section>
+  </main>
+  <nav class="tabbar">
+    <a class="tab-item" href="index.html">
+      <span>🏠</span>
+      <span>Home</span>
+    </a>
+    <a class="tab-item" href="cart.html">
+      <span>🛒</span>
+      <span>Cart</span>
+      <span class="badge-pill" id="cartBadge">0</span>
+    </a>
+    <a class="tab-item" href="account.html">
+      <span>👤</span>
+      <span>Account</span>
+    </a>
+  </nav>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
