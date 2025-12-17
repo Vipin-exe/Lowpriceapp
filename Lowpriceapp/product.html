@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LowPrice • Product</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="theme-pink">
+  <header class="product-header">
+    <a class="back-btn" href="index.html">←</a>
+    <div class="title" id="prodTitle">Product</div>
+  </header>
+  <main class="product-container">
+    <section class="gallery">
+      <div class="slides" id="gallerySlides"></div>
+      <button class="nav-btn prev" id="galPrev">‹</button>
+      <button class="nav-btn next" id="galNext">›</button>
+      <div class="dots" id="galDots"></div>
+    </section>
+
+    <section class="prod-info">
+      <div class="row name-price">
+        <h1 class="prod-name" id="prodName">Product Name</h1>
+        <div class="price" id="prodPrice">RM0.00</div>
+      </div>
+      <div class="row meta">
+        <span>⭐ <span id="prodRating">5.0</span></span>
+        <span>•</span>
+        <span id="prodSold">7.0k Sold</span>
+        <button class="icon-btn">♡</button>
+        <button class="icon-btn">↗</button>
+      </div>
+    </section>
+
+    <section class="tabs-row">
+      <button class="tab active">Overview</button>
+      <button class="tab">Reviews</button>
+      <button class="tab">Product details</button>
+      <button class="tab">Recommendation</button>
+    </section>
+
+    <section class="content-card">
+      <div class="content-line">100% Authentic • Durable metal construction • Air Vent</div>
+      <div class="content-line">Ships within 24 hours • Free returns</div>
+    </section>
+
+    <section class="reco-grid">
+      <div class="reco-card">
+        <div class="reco-thumb pink"></div>
+        <div class="reco-title">Modern light clothes</div>
+        <div class="reco-meta"><span>RM29.16</span><span class="badge">-17%</span></div>
+      </div>
+      <div class="reco-card">
+        <div class="reco-thumb blue"></div>
+        <div class="reco-title">Blue Hoodie</div>
+        <div class="reco-meta"><span>RM29.16</span><span class="badge">-25%</span></div>
+      </div>
+      <div class="reco-card">
+        <div class="reco-thumb gray"></div>
+        <div class="reco-title">Basic Tote</div>
+        <div class="reco-meta"><span>RM19.90</span><span class="badge">-10%</span></div>
+      </div>
+    </section>
+  </main>
+
+  <section class="buybar">
+    <button class="secondary-btn" id="buyNowBtn">Buy Now</button>
+    <button class="primary-btn" id="addToCartBtn">Add to Cart</button>
+  </section>
+
+  <nav class="tabbar">
+    <a class="tab-item" href="index.html">
+      <span>🏠</span>
+      <span>Home</span>
+    </a>
+    <a class="tab-item" href="cart.html">
+      <span>🛒</span>
+      <span>Cart</span>
+      <span class="badge-pill" id="cartBadge">0</span>
+    </a>
+    <a class="tab-item" href="account.html">
+      <span>👤</span>
+      <span>Account</span>
+    </a>
+  </nav>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

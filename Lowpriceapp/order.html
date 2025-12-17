@@ -3,50 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>LowPrice • Order</title>
+  <title>LowPrice • My Orders</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="theme-pink">
   <header class="order-header">
-    <a class="back-btn" href="cart.html">←</a>
-    <div class="title">Order Summary</div>
+    <a class="back-btn" href="account.html">←</a>
+    <div class="title">My Orders</div>
   </header>
   <main class="order-container">
-    <section class="address">
-      <div class="row">
-        <span>Deliver to</span>
-        <a href="#" class="link">Change</a>
+    <div class="tabs" style="margin-bottom: 16px; overflow-x: auto; padding-bottom: 4px;">
+      <button class="tab active">All</button>
+      <button class="tab">To Pay</button>
+      <button class="tab">To Ship</button>
+      <button class="tab">To Receive</button>
+    </div>
+
+    <div class="order-list">
+      <!-- Mock Order 1 -->
+      <div class="order-card-item">
+        <div class="head">
+          <span class="id">Order #220912</span>
+          <span class="status success">Delivered</span>
+        </div>
+        <div class="body">
+          <div class="thumb"></div>
+          <div class="info">
+            <div class="name">Satin Pink Dress</div>
+            <div class="meta">Size: M, Color: Pink</div>
+            <div class="price">RM29.16</div>
+          </div>
+        </div>
+        <div class="foot">
+          <span>2 items</span>
+          <span class="total">Total: RM58.32</span>
+        </div>
+        <div class="actions">
+          <button class="secondary-btn small">Buy Again</button>
+          <button class="primary-btn small">Review</button>
+        </div>
       </div>
-      <div class="addr-line" id="addressLine">Default Address</div>
-    </section>
-    <section class="order-items" id="orderItems"></section>
-    <section class="payment">
-      <div class="row">
-        <span>Payment</span>
-        <select id="paymentMethod">
-          <option value="cod">Cash on Delivery</option>
-          <option value="card">Card</option>
-          <option value="wallet">Wallet</option>
-        </select>
+
+      <!-- Mock Order 2 -->
+      <div class="order-card-item">
+        <div class="head">
+          <span class="id">Order #220815</span>
+          <span class="status">Processing</span>
+        </div>
+        <div class="body">
+          <div class="thumb" style="background: linear-gradient(180deg, #c7dcff, #fff);"></div>
+          <div class="info">
+            <div class="name">Blue Hoodie</div>
+            <div class="meta">Size: L, Color: Blue</div>
+            <div class="price">RM29.16</div>
+          </div>
+        </div>
+        <div class="foot">
+          <span>1 items</span>
+          <span class="total">Total: RM29.16</span>
+        </div>
+        <div class="actions">
+          <button class="secondary-btn small">Track Order</button>
+        </div>
       </div>
-    </section>
-    <section class="order-total">
-      <div class="row">
-        <span>Items Total</span>
-        <span id="itemsTotal">RM0.00</span>
-      </div>
-      <div class="row">
-        <span>Shipping</span>
-        <span id="shippingTotal">RM0.00</span>
-      </div>
-      <div class="row total">
-        <span>Payable</span>
-        <span id="payableTotal">RM0.00</span>
-      </div>
-      <button class="primary-btn w-full" id="confirmOrderBtn">Confirm Order</button>
-      <button class="secondary-btn w-full" id="backHomeBtn">Back to Home</button>
-    </section>
+    </div>
   </main>
   <nav class="tabbar">
     <a class="tab-item" href="index.html">
@@ -58,7 +79,7 @@
       <span>Cart</span>
       <span class="badge-pill" id="cartBadge">0</span>
     </a>
-    <a class="tab-item" href="account.html">
+    <a class="tab-item active" href="account.html">
       <span>👤</span>
       <span>Account</span>
     </a>
